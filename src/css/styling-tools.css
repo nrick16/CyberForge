@@ -1,0 +1,23 @@
+.flip-button {
+  display: inline-block;
+  background-color: var(--fourth-color);
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 25px;
+}
+
+.flip-button span {
+  display: inline-block;
+  transition: transform 0.5s ease-in-out;
+  transform-origin: center;
+  font-weight: 700;
+}
+
+.flip-button:hover,
+.flip-button:hover span {
+  background-color: var(--main-color);
+  color: var(--third-color);
+  transform: rotateX(360deg);
+  text-decoration: none;
+}
